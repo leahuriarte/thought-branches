@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thought-branches"
+version = "0.1.0"
+description = "Generate condition distributions, then chunk and label outputs for thought-branch experiments."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+tb-prepare-base-distributions = "thought_branches.scripts.prepare_base_distribution_jobs:main"
+tb-run-generation = "thought_branches.scripts.run_generation:main"
+tb-chunk-outputs = "thought_branches.scripts.chunk_outputs:main"
+tb-label-chunks = "thought_branches.scripts.label_chunks:main"
+tb-prepare-branch-continuations = "thought_branches.scripts.prepare_branch_continuation_jobs:main"
+tb-build-viewer = "thought_branches.scripts.build_viewer:main"
+tb-label-reasoning-llm = "thought_branches.scripts.label_reasoning_chunks_llm:main"
+tb-run-judging = "thought_branches.scripts.run_judging:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

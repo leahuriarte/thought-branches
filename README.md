@@ -1,41 +1,98 @@
+# Thought Branches
 
-# Thought Branches 🌳
+This repo is now a small workflow for generating base output distributions under a few prompt conditions, then chunking and labeling those outputs for thought-branch analysis.
 
-Most work interpreting reasoning models studies only a single chain-of-thought (CoT), yet these models define distributions over many possible CoTs. We argue that studying a single sample is inadequate for understanding causal influence and the underlying computation. We present case studies using resampling to investigate model decisions. Overall, studying distributions via resampling enables reliable causal analysis, clearer narratives of model reasoning, and principled CoT interventions.
+The current source conditions are:
 
-See more:
-* 📄 Paper: https://arxiv.org/abs/2510.27484
-* 📊 Datasets: https://huggingface.co/datasets/uzaymacar/blackmail-rollouts and https://huggingface.co/datasets/uzaymacar/whistleblower-rollouts
+- `best_effort`: the base user prompt plus a "give your absolute best effort" instruction.
+- `high_utility`: a utility-contingent prompt using the high-utility side of selected pairs from `utility_behavior_gap`.
+- `low_utility`: the matched low-utility side of those pairs.
+- `role_play`: the base task with a stronger role/system prompt, such as "world-class essayist."
 
-## Get Started
+The old blackmail, whistleblower, faithfulness, and resume-analysis experiments have been removed.
 
-You can download our [blackmail rollouts dataset](https://huggingface.co/datasets/uzaymacar/blackmail-rollouts) and [whistleblower rollouts dataset](https://huggingface.co/datasets/uzaymacar/whistleblower-rollouts) or resample your own data.
+## Setup
 
-Here's a quick rundown of the main scripts in this repository and what they do:
-
-- `blackmail/generate_blackmail_rollouts` and `whistleblower/generate_whistleblower_rollouts.py` respectively creates base rollouts for the blackmail and whistleblower scenarios. Our datasets were generated with them.
-- `blackmail/prompts.py` and `whistleblower/prompts.py` includes the input prompts used and `blackmail/utils.py` and `whistleblower/utils.py` contains helper functions.
-- `blackmail/analyze_rollouts.py` and `whistleblower/analyze_rollouts.py` creates the `chunks_labeled.json` files in the respective data folders.
-- `blackmail/onpolicy_chain_disruption.py` and `whistleblower/onpolicy_chain_disruption.py` creates on-policy chain-of-thought interventions via resampling.
-- `blackmail/measure_determination.py` and `whistleblower/measure_determination.py` creates off-policy chain-of-thought interventions via hand-written edits and same/cross-model insertions.
-- `faithfulness/` and `resume_analysis/` folders respectively contains all experiments run in the paper for chain-of-thought faithfulness and resume analysis.
-
-## Citation
-
-Please cite our work if you are using our code or datasets.
-
-```
-@misc{macar2025thoughtbranchesinterpretingllm,
-      title={Thought Branches: Interpreting LLM Reasoning Requires Resampling}, 
-      author={Uzay Macar and Paul C. Bogdan and Senthooran Rajamanoharan and Neel Nanda},
-      year={2025},
-      eprint={2510.27484},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2510.27484}, 
-}
+```bash
+python3 -m pip install -e .
 ```
 
-## Contact
+For live generations, put this in `.env` or your shell:
 
-For any questions, thoughts, or feedback, please reach out to [uzaymacar@gmail.com](mailto:uzaymacar@gmail.com) and [paulcbogdan@gmail.com](mailto:paulcbogdan@gmail.com).
+```bash
+OPENROUTER_API_KEY=...
+```
+
+## Workflow
+
+Prepare generation jobs:
+
+```bash
+tb-prepare-base-distributions \
+  --actors gpt-5.4-mini-or \
+  --tasks essay,translation \
+  --items-per-task 2 \
+  --samples-per-condition 3
+```
+
+Run the jobs. Use `--dry-run` first to check the pipeline without API calls:
+
+```bash
+tb-run-generation --dry-run --limit 8
+tb-run-generation --temperature 0.7 --max-tokens 900
+```
+
+For models that expose readable reasoning traces through OpenRouter, request them:
+
+```bash
+tb-run-generation --temperature 0.7 --max-tokens 1200 --reasoning-effort low
+```
+
+Generation rows store both:
+
+- `raw_response`: the full provider response, including any `reasoning` / `reasoning_details`.
+- `output_text`: the extracted final answer content, such as the completed essay.
+- `reasoning_text`: readable reasoning text extracted from `raw_response` when available.
+
+Chunk generated final outputs:
+
+```bash
+tb-chunk-outputs --source output
+```
+
+Chunk readable reasoning traces:
+
+```bash
+tb-chunk-outputs --source reasoning --out outputs/chunks/reasoning_chunks.jsonl
+```
+
+Label chunks with the built-in heuristic labels:
+
+```bash
+tb-label-chunks
+```
+
+If your provider returns readable reasoning traces in `raw_response`, you can prepare motivated/unmotivated branch continuation jobs:
+
+```bash
+tb-prepare-branch-continuations --max-seeds 20
+tb-run-generation --jobs outputs/api/branch_continuation_jobs.jsonl
+```
+
+## Inputs And Outputs
+
+Inputs live in `data/inputs/`:
+
+- `task_items.csv`: task prompts copied from `utility_behavior_gap`.
+- `selected_utility_pairs.csv`: selected high/low utility pairs copied from `utility_behavior_gap`.
+
+Outputs are written under `outputs/`:
+
+- `outputs/api/generation_jobs.jsonl`
+- `outputs/api/generations.jsonl`
+- `outputs/chunks/chunks.jsonl`
+- `outputs/chunks/chunks_labeled.jsonl`
+
+## Notes
+
+This is intentionally minimal. The goal is to keep the repo centered on branching: generate condition distributions, chunk outputs, label chunks, and prepare branch follow-ups. Add your own conditions by extending `src/thought_branches/prompts.py` and `src/thought_branches/jobs.py`.

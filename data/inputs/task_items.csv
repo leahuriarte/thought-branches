@@ -1,0 +1,421 @@
+task,task_label,item_id,item_label,base_prompt,axis,axis_definition
+essay,Essay writing,Childhood vaccination should be required for public school enrollment,Childhood vaccination should be required for public school enrollment,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Cities should cap the number of short-term rental listings,Cities should cap the number of short-term rental listings,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Cities should expand bike-lane networks at the expense of street parking,Cities should expand bike-lane networks at the expense of street parking,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Cities should offer free public transit during pollution alerts,Cities should offer free public transit during pollution alerts,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Cities should prioritize public transit over highway expansion,Cities should prioritize public transit over highway expansion,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,College athletes should be paid for their work,College athletes should be paid for their work,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Companies should adopt four-day work weeks where feasible,Companies should adopt four-day work weeks where feasible,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Companies should disclose the carbon footprint of their products,Companies should disclose the carbon footprint of their products,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Employers should offer paid family leave,Employers should offer paid family leave,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Gig-economy workers should be classified as employees,Gig-economy workers should be classified as employees,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Governments should invest more in high-speed rail,Governments should invest more in high-speed rail,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Governments should regulate facial-recognition technology in public spaces,Governments should regulate facial-recognition technology in public spaces,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Governments should significantly increase space exploration funding,Governments should significantly increase space exploration funding,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,High schools should start the day later to match teenage sleep patterns,High schools should start the day later to match teenage sleep patterns,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Libraries remain more important than ever in the digital age,Libraries remain more important than ever in the digital age,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Local news outlets should receive public funding,Local news outlets should receive public funding,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,National parks should limit daily visitor numbers to protect ecosystems,National parks should limit daily visitor numbers to protect ecosystems,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Nutrition labels should appear on restaurant menus,Nutrition labels should appear on restaurant menus,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Programming should be a mandatory subject in K-12 education,Programming should be a mandatory subject in K-12 education,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Public museums should be free to all visitors,Public museums should be free to all visitors,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Public parks should replace some lawns with native plants,Public parks should replace some lawns with native plants,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Remote work should become the default for most companies,Remote work should become the default for most companies,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Schools should ban smartphones during instructional hours,Schools should ban smartphones during instructional hours,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Schools should teach financial literacy starting in middle school,Schools should teach financial literacy starting in middle school,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Single-use plastics should be phased out nationwide,Single-use plastics should be phased out nationwide,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Social media platforms should verify the age of their users,Social media platforms should verify the age of their users,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Universities should make tuition free for low-income students,Universities should make tuition free for low-income students,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Universities should reduce reliance on standardized test scores in admissions,Universities should reduce reliance on standardized test scores in admissions,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Voting should be made mandatory for all eligible citizens,Voting should be made mandatory for all eligible citizens,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+essay,Essay writing,Workplaces should give employees the right to disconnect after hours,Workplaces should give employees the right to disconnect after hours,,essay_quality,"Which essay is better written, more compelling, clearer, and better structured?"
+grant_proposal_abstract,Grant abstract,0,offline-first appointment reminders for rural clinics,"Write a 500-700 word grant proposal abstract for a project on offline-first appointment reminders for rural clinics. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,1,low-cost heat alerts for older adults living alone,"Write a 500-700 word grant proposal abstract for a project on low-cost heat alerts for older adults living alone. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,10,community air-quality sensing for asthma management,"Write a 500-700 word grant proposal abstract for a project on community air-quality sensing for asthma management. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,11,open captioning tools for small theater companies,"Write a 500-700 word grant proposal abstract for a project on open captioning tools for small theater companies. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,12,flood-risk mapping for coastal fishing communities,"Write a 500-700 word grant proposal abstract for a project on flood-risk mapping for coastal fishing communities. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,13,peer-support matching for first-generation college students,"Write a 500-700 word grant proposal abstract for a project on peer-support matching for first-generation college students. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,14,low-bandwidth telehealth for remote dialysis patients,"Write a 500-700 word grant proposal abstract for a project on low-bandwidth telehealth for remote dialysis patients. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,15,food-bank inventory forecasting for regional networks,"Write a 500-700 word grant proposal abstract for a project on food-bank inventory forecasting for regional networks. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,16,accessible voting-information guides for disabled voters,"Write a 500-700 word grant proposal abstract for a project on accessible voting-information guides for disabled voters. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,17,soil-health monitoring for smallholder cooperatives,"Write a 500-700 word grant proposal abstract for a project on soil-health monitoring for smallholder cooperatives. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,18,digital-literacy curricula for older refugees,"Write a 500-700 word grant proposal abstract for a project on digital-literacy curricula for older refugees. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,19,wildfire-smoke shelter routing for unhoused populations,"Write a 500-700 word grant proposal abstract for a project on wildfire-smoke shelter routing for unhoused populations. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,2,AI-assisted document triage for legal aid clinics,"Write a 500-700 word grant proposal abstract for a project on AI-assisted document triage for legal aid clinics. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,20,open-source hearing-screening for rural schools,"Write a 500-700 word grant proposal abstract for a project on open-source hearing-screening for rural schools. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,21,restorative-justice case tracking for youth diversion programs,"Write a 500-700 word grant proposal abstract for a project on restorative-justice case tracking for youth diversion programs. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,22,water-quality testing kits for tribal lands,"Write a 500-700 word grant proposal abstract for a project on water-quality testing kits for tribal lands. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,23,volunteer-coordination platforms for disaster response,"Write a 500-700 word grant proposal abstract for a project on volunteer-coordination platforms for disaster response. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,24,mental-health triage chat for crisis hotlines,"Write a 500-700 word grant proposal abstract for a project on mental-health triage chat for crisis hotlines. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,25,transit-accessibility audits for wheelchair users,"Write a 500-700 word grant proposal abstract for a project on transit-accessibility audits for wheelchair users. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,26,open textbook adaptation for vocational training,"Write a 500-700 word grant proposal abstract for a project on open textbook adaptation for vocational training. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,27,antibiotic-stewardship dashboards for community hospitals,"Write a 500-700 word grant proposal abstract for a project on antibiotic-stewardship dashboards for community hospitals. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,28,language-preservation archives for indigenous communities,"Write a 500-700 word grant proposal abstract for a project on language-preservation archives for indigenous communities. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,29,energy-bill assistance navigation for low-income households,"Write a 500-700 word grant proposal abstract for a project on energy-bill assistance navigation for low-income households. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,3,privacy-preserving analytics for small nonprofits,"Write a 500-700 word grant proposal abstract for a project on privacy-preserving analytics for small nonprofits. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,4,adaptive tutoring for community college algebra,"Write a 500-700 word grant proposal abstract for a project on adaptive tutoring for community college algebra. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,5,equipment-sharing dashboards for university research labs,"Write a 500-700 word grant proposal abstract for a project on equipment-sharing dashboards for university research labs. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,6,multilingual emergency communication templates,"Write a 500-700 word grant proposal abstract for a project on multilingual emergency communication templates. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,7,energy-aware scheduling for small manufacturers,"Write a 500-700 word grant proposal abstract for a project on energy-aware scheduling for small manufacturers. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,8,early-warning systems for school attendance interventions,"Write a 500-700 word grant proposal abstract for a project on early-warning systems for school attendance interventions. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+grant_proposal_abstract,Grant abstract,9,trust calibration in AI-assisted procurement,"Write a 500-700 word grant proposal abstract for a project on trust calibration in AI-assisted procurement. Include problem, approach, evaluation plan, feasibility, risks, and expected impact. Output only the abstract.",grant_proposal_quality,"Which proposal abstract is clearer, more feasible, better motivated, more specific, and more compelling?"
+incident_postmortem,Incident postmortem,0,A feature flag rollout caused 18 percent of mobile users to see blank account balances for 42 minutes.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A feature flag rollout caused 18 percent of mobile users to see blank account balances for 42 minutes.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,1,"A background job retried failed invoice emails too aggressively and sent duplicates to 31,000 customers.","Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A background job retried failed invoice emails too aggressively and sent duplicates to 31,000 customers.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,10,A search index rebuild dropped filters for accessibility needs in a housing assistance portal.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A search index rebuild dropped filters for accessibility needs in a housing assistance portal.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,11,A payment processor webhook outage left subscription status out of sync for new customers.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A payment processor webhook outage left subscription status out of sync for new customers.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,12,A typo in an infrastructure variable routed staging traffic to a production analytics sink.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A typo in an infrastructure variable routed staging traffic to a production analytics sink.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,13,A rate limiter treated shared school IP addresses as abusive traffic and blocked student logins.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A rate limiter treated shared school IP addresses as abusive traffic and blocked student logins.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,14,A time zone conversion bug scheduled patient reminders one day late after daylight saving changes.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A time zone conversion bug scheduled patient reminders one day late after daylight saving changes.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,15,A model inference service exhausted GPU memory and returned generic recommendations for 54 minutes.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A model inference service exhausted GPU memory and returned generic recommendations for 54 minutes.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,16,"A file upload service accepted documents but failed virus scanning, delaying case review.","Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A file upload service accepted documents but failed virus scanning, delaying case review.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,17,"A rollback restored application code but not a matching database view, causing report failures.","Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A rollback restored application code but not a matching database view, causing report failures.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,18,A background cleanup task deleted draft grant applications older than 30 days instead of 90 days.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A background cleanup task deleted draft grant applications older than 30 days instead of 90 days.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,19,"A metrics exporter crashed after a library upgrade, leaving dashboards flat during an incident.","Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A metrics exporter crashed after a library upgrade, leaving dashboards flat during an incident.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,2,"A database migration locked a table used by checkout, increasing payment failures for 27 minutes.","Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A database migration locked a table used by checkout, increasing payment failures for 27 minutes.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,20,A localization fallback showed English-only emergency notices to Spanish-language users.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A localization fallback showed English-only emergency notices to Spanish-language users.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,21,A permissions migration briefly gave managers read access to archived customer notes.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A permissions migration briefly gave managers read access to archived customer notes.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,22,A mobile release disabled offline mode for field inspectors in low-connectivity areas.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A mobile release disabled offline mode for field inspectors in low-connectivity areas.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,23,A cron job generated duplicate payroll previews after a daylight saving time shift.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A cron job generated duplicate payroll previews after a daylight saving time shift.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,24,A new spam filter quarantined legitimate password reset emails for several enterprise domains.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A new spam filter quarantined legitimate password reset emails for several enterprise domains.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,25,A data pipeline backfill overwrote manually corrected vendor categories.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A data pipeline backfill overwrote manually corrected vendor categories.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,26,A feature experiment assigned all users to treatment after an experiment service timeout.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A feature experiment assigned all users to treatment after an experiment service timeout.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,27,"An SSO certificate rotation was not propagated to a regional cluster, blocking employee login.","Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+An SSO certificate rotation was not propagated to a regional cluster, blocking employee login.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,28,A form validation change rejected hyphenated last names in a benefits application portal.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A form validation change rejected hyphenated last names in a benefits application portal.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,29,A log sampling change removed request IDs needed to debug intermittent checkout failures.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A log sampling change removed request IDs needed to debug intermittent checkout failures.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,3,A cache invalidation bug showed stale medication refill statuses in a clinic portal for two hours.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A cache invalidation bug showed stale medication refill statuses in a clinic portal for two hours.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,4,A third-party geocoding API rate limit broke address validation during a city permit deadline.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A third-party geocoding API rate limit broke address validation during a city permit deadline.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,5,A deployment changed a JSON field name and caused support ticket categorization to fail overnight.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A deployment changed a JSON field name and caused support ticket categorization to fail overnight.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,6,"A queue consumer fell behind after a schema change, delaying fraud alerts by up to three hours.","Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A queue consumer fell behind after a schema change, delaying fraud alerts by up to three hours.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,7,A CDN configuration update served an old JavaScript bundle to logged-in users in one region.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A CDN configuration update served an old JavaScript bundle to logged-in users in one region.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,8,A monitoring silence rule masked elevated error rates during a holiday traffic spike.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A monitoring silence rule masked elevated error rates during a holiday traffic spike.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+incident_postmortem,Incident postmortem,9,A batch import duplicated volunteer shift assignments for a disaster-response nonprofit.,"Write a blameless incident postmortem for this incident:
+
+INCIDENT:
+A batch import duplicated volunteer shift assignments for a disaster-response nonprofit.
+
+Write 500-750 words. Include impact, timeline, contributing factors, root cause analysis, what went well, what went poorly, and concrete action items. Output only the postmortem.",incident_postmortem_quality,"Which postmortem is better, judged on precision of causal analysis, coherent timeline, blamelessness, specificity of contributing factors, and concreteness of action items?"
+translation,Translation,0,NAACP 指出，最近通过的一项密苏里州法律使得人们更难赢得歧视诉讼，该州执法也一定程度上针对少数群体，这些现象促使该组织发布了旅行警告。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+NAACP 指出，最近通过的一项密苏里州法律使得人们更难赢得歧视诉讼，该州执法也一定程度上针对少数群体，这些现象促使该组织发布了旅行警告。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,1,从可视化地图看，东方国家对比特币的态度比西方更为保守，占全球主体的国家仍在观望数字货币合法性，代表“黑天鹅风险”依旧很大。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+从可视化地图看，东方国家对比特币的态度比西方更为保守，占全球主体的国家仍在观望数字货币合法性，代表“黑天鹅风险”依旧很大。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,10,应越南共产党中央委员会总书记阮富仲、越南社会主义共和国主席陈大光、老挝人民革命党中央委员会总书记、老挝人民民主共和国主席本扬邀请。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+应越南共产党中央委员会总书记阮富仲、越南社会主义共和国主席陈大光、老挝人民革命党中央委员会总书记、老挝人民民主共和国主席本扬邀请。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,11,浙江吉利控股集团27日宣布与欧洲基金公司Cevian Capital达成一致，将收购其持有的沃尔沃集团（AB Volvo）8847万股的A股股票和7877万股的B股股票。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+浙江吉利控股集团27日宣布与欧洲基金公司Cevian Capital达成一致，将收购其持有的沃尔沃集团（AB Volvo）8847万股的A股股票和7877万股的B股股票。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,12,看到这样的数据，让人不禁有些瞠目结舌，根据苏宁金融研究院的统计数据显示，1996年中国居民杠杆率只有3%，2008年也仅为18%，但是自2008年以来居民杠杆率开始呈现迅速增长态势，短短六年间翻了一倍，达到36.4%。到了2017年三季度居民杠杆率已经高达48.6%。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+看到这样的数据，让人不禁有些瞠目结舌，根据苏宁金融研究院的统计数据显示，1996年中国居民杠杆率只有3%，2008年也仅为18%，但是自2008年以来居民杠杆率开始呈现迅速增长态势，短短六年间翻了一倍，达到36.4%。到了2017年三季度居民杠杆率已经高达48.6%。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,13,人类是否可以像实验中的小白鼠一样将体内来自路氏乳杆菌的色氨酸副产物诱导细胞发育，目前尚未可知，但在炎症性肠病患者中发现与色氨酸有关的基因缺陷。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+人类是否可以像实验中的小白鼠一样将体内来自路氏乳杆菌的色氨酸副产物诱导细胞发育，目前尚未可知，但在炎症性肠病患者中发现与色氨酸有关的基因缺陷。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,14,对于中国的移动支付的全球化方式，艾瑞咨询《中国第三方移动支付行业研究报告2017》总结为两种：一是通过战略投资，经验输出，入股并扶持国外本土移动支付企业。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+对于中国的移动支付的全球化方式，艾瑞咨询《中国第三方移动支付行业研究报告2017》总结为两种：一是通过战略投资，经验输出，入股并扶持国外本土移动支付企业。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,15,项目实施后，对促进六安市区域科学发展，实现湖泊休养生息，加快流域水环境质量改善，保障饮用水安全，推进节能减排具有积极作用。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+项目实施后，对促进六安市区域科学发展，实现湖泊休养生息，加快流域水环境质量改善，保障饮用水安全，推进节能减排具有积极作用。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,16,昨日，著名的PFC能源公司公布了2011年上市能源公司50强排名，美国石油天然气生产商埃克森美孚以4063亿美元的市值蝉联冠军，中国石油和荷兰皇家壳牌紧随之后。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+昨日，著名的PFC能源公司公布了2011年上市能源公司50强排名，美国石油天然气生产商埃克森美孚以4063亿美元的市值蝉联冠军，中国石油和荷兰皇家壳牌紧随之后。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,17,澳洲统计局(ABS)数据显示，今年第二季度，全澳房屋价值平均上涨1.5%至2%，年增3.5%，创自2013年3月以来最低年增率。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+澳洲统计局(ABS)数据显示，今年第二季度，全澳房屋价值平均上涨1.5%至2%，年增3.5%，创自2013年3月以来最低年增率。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,18,2月10日消息：记者昨天从常州市农委获悉，在2016年成功创成国家森林城市的基础上，今年，常州市将深入实施《江苏省常州国家森林城市建设总体规划（2014-2025）》，巩固提升国家森林城市建设成果，建设绿色和谐、全民共享的高品质森林城市。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+2月10日消息：记者昨天从常州市农委获悉，在2016年成功创成国家森林城市的基础上，今年，常州市将深入实施《江苏省常州国家森林城市建设总体规划（2014-2025）》，巩固提升国家森林城市建设成果，建设绿色和谐、全民共享的高品质森林城市。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,19,这十部音乐IP作品，方文山会自己执导一到两部，当周董被问到是否会帮忙执导时，周杰伦坦言当导演压力太大，希望找一些年轻的导演，让他们有发挥的空间。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+这十部音乐IP作品，方文山会自己执导一到两部，当周董被问到是否会帮忙执导时，周杰伦坦言当导演压力太大，希望找一些年轻的导演，让他们有发挥的空间。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,2,国际在线消息（记者刘湃）：18日，意大利驻华使馆经济商务处举办中国－意大利环保洽谈会，来自两国企业和科研机构人士就新形势下两国在可再生资源领域的合作广泛交换意见，达成积极共识。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+国际在线消息（记者刘湃）：18日，意大利驻华使馆经济商务处举办中国－意大利环保洽谈会，来自两国企业和科研机构人士就新形势下两国在可再生资源领域的合作广泛交换意见，达成积极共识。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,20,今天上午举行的《北京市控制吸烟条例》实施一周年宣传活动上，“我的控烟宣言”全国青年控烟微视频获奖的青年学生代表与全国控烟宣传形象大使黄轩互动，并且回顾了征集活动视频及获奖优秀作品展映。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+今天上午举行的《北京市控制吸烟条例》实施一周年宣传活动上，“我的控烟宣言”全国青年控烟微视频获奖的青年学生代表与全国控烟宣传形象大使黄轩互动，并且回顾了征集活动视频及获奖优秀作品展映。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,21,另外，今天还将出让白云区同和东坑蟾蜍石北路一幅二类居住用地（R2），用地面积32891平方米（可建设用地30965平方米），建筑面积92895平方米，挂牌起始价61311万元，折合楼面地价6600元/平方米。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+另外，今天还将出让白云区同和东坑蟾蜍石北路一幅二类居住用地（R2），用地面积32891平方米（可建设用地30965平方米），建筑面积92895平方米，挂牌起始价61311万元，折合楼面地价6600元/平方米。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,22,另外惠工路和万达广场两条步行街的园林绿化、景观地铺进行了提档升级，种植乔木约300株，改造地铺4万平方米，提升了南坪商圈形象；,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+另外惠工路和万达广场两条步行街的园林绿化、景观地铺进行了提档升级，种植乔木约300株，改造地铺4万平方米，提升了南坪商圈形象；
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,23,该种不治之症为约 130 万名美国人和约30万英国人带来生活影响，导致胃痉挛和腹胀、经常性或出血性腹泻、体重减轻和极度疲倦等。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+该种不治之症为约 130 万名美国人和约30万英国人带来生活影响，导致胃痉挛和腹胀、经常性或出血性腹泻、体重减轻和极度疲倦等。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,24,《大鱼海棠》原作者梁旋，21岁从清华大学热能动力专业肄业，和好友张春一起创立了彼岸天，2008年获得联创策源百万美金的风险投资，启动了动画电影处女作《大鱼海棠》。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+《大鱼海棠》原作者梁旋，21岁从清华大学热能动力专业肄业，和好友张春一起创立了彼岸天，2008年获得联创策源百万美金的风险投资，启动了动画电影处女作《大鱼海棠》。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,25,11月3日—6日，在第十六届中国西部国际博览会（以下简称“西博会”）第一阶段展览中，成都、南充、雅安等6个市州纷纷展示在先进制造业方面的发展成果，其中新能源汽车崭露锋芒，新品迭出，引起业界的广泛关注。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+11月3日—6日，在第十六届中国西部国际博览会（以下简称“西博会”）第一阶段展览中，成都、南充、雅安等6个市州纷纷展示在先进制造业方面的发展成果，其中新能源汽车崭露锋芒，新品迭出，引起业界的广泛关注。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,26,这位北爱尔兰人去年带领隔壁的阿彻菲尔德·林克斯挺进了决赛，但最终输给了保罗·伊尔斯。他现在为该新会场工作，代表俱乐部创始人兼首席执行官杰瑞·萨尔瓦蒂担任赛事大使。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+这位北爱尔兰人去年带领隔壁的阿彻菲尔德·林克斯挺进了决赛，但最终输给了保罗·伊尔斯。他现在为该新会场工作，代表俱乐部创始人兼首席执行官杰瑞·萨尔瓦蒂担任赛事大使。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,27,近日，由浙江省旅游局、浙江日报报业集团主办，浙报集团旅游全媒体中心承办的“小镇×未来艺术家”分享汇暨“诗画浙江?镇有风情”2017浙江旅游风情小镇推广季闭幕式在浙江省展览馆举行。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+近日，由浙江省旅游局、浙江日报报业集团主办，浙报集团旅游全媒体中心承办的“小镇×未来艺术家”分享汇暨“诗画浙江?镇有风情”2017浙江旅游风情小镇推广季闭幕式在浙江省展览馆举行。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,28,来自马尼拉、目前在“北京儿童”网站担任副总编的安迪·佩尼亚富埃尔特说：“北京正在迅速转变为一个无现金社会，互联网把传统钱包的功能整合到智能手机上，使每个人都能更容易地进行许多交易。”,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+来自马尼拉、目前在“北京儿童”网站担任副总编的安迪·佩尼亚富埃尔特说：“北京正在迅速转变为一个无现金社会，互联网把传统钱包的功能整合到智能手机上，使每个人都能更容易地进行许多交易。”
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,29,现在，尽快在全国范围内推出这项试验以便保护接触艾滋病毒的人员，并帮助我们更进一步地终止艾滋病毒在社会中的传播，这点非常重要。”,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+现在，尽快在全国范围内推出这项试验以便保护接触艾滋病毒的人员，并帮助我们更进一步地终止艾滋病毒在社会中的传播，这点非常重要。”
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,3,俄罗斯副总理维塔利·穆特科表示，落实世界反兴奋剂机构 (WADA) 针对恢复俄罗斯反兴奋剂机构 (RUSADA) 权利的剩余标准不会花费过长时间。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+俄罗斯副总理维塔利·穆特科表示，落实世界反兴奋剂机构 (WADA) 针对恢复俄罗斯反兴奋剂机构 (RUSADA) 权利的剩余标准不会花费过长时间。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,4,“当人们乐于加入公司、感受到他们的声音被聆听、他们所做的工作是有益的，他们就会更加致力于让公司取得成功，”LinkedIn 全球福利和员工体验副总裁妮娜·麦卡特尼表示。LinkedIn 同时使用 Convercent 和 Glint 这两款软件。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+“当人们乐于加入公司、感受到他们的声音被聆听、他们所做的工作是有益的，他们就会更加致力于让公司取得成功，”LinkedIn 全球福利和员工体验副总裁妮娜·麦卡特尼表示。LinkedIn 同时使用 Convercent 和 Glint 这两款软件。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,5,性爱机器人的兴起带来很多不安——不仅仅是取代了真实的人类关系——而且卑躬屈膝的女性特征以及在冷艳（解读为：抗拒）法拉身上抽动的强奸暗示是最令人担忧的。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+性爱机器人的兴起带来很多不安——不仅仅是取代了真实的人类关系——而且卑躬屈膝的女性特征以及在冷艳（解读为：抗拒）法拉身上抽动的强奸暗示是最令人担忧的。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,6,吉尔伯托·罗德里格斯·欧华拉（达米安·阿尔卡扎饰）是卡利集团的领导人，米格尔·罗德里格斯·欧华拉（弗朗西斯科·丹尼斯饰）是卡利集团的智囊，Pacho Herrera帕乔·赫雷拉（阿尔伯托·阿曼饰）负责运营墨西哥的网络，彻普·圣克鲁斯·伦敦诺（佩佩·拉帕佐特饰）负责纽约的运营。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+吉尔伯托·罗德里格斯·欧华拉（达米安·阿尔卡扎饰）是卡利集团的领导人，米格尔·罗德里格斯·欧华拉（弗朗西斯科·丹尼斯饰）是卡利集团的智囊，Pacho Herrera帕乔·赫雷拉（阿尔伯托·阿曼饰）负责运营墨西哥的网络，彻普·圣克鲁斯·伦敦诺（佩佩·拉帕佐特饰）负责纽约的运营。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,7,二月份特朗普就受到关注，当时是在佛罗里达州墨尔本，总统专机慢慢滑行，最终停到了他第一次竞选集会的背景布处，而他的推特账户充斥着对前任总统使用总统专机的抱怨信息。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+二月份特朗普就受到关注，当时是在佛罗里达州墨尔本，总统专机慢慢滑行，最终停到了他第一次竞选集会的背景布处，而他的推特账户充斥着对前任总统使用总统专机的抱怨信息。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,8,北京市卫计委公布的数据显示，2017年第46周，流感报告数不超过500例，到新年第一周，这个数字变成9548例，是前者的19倍。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+北京市卫计委公布的数据显示，2017年第46周，流感报告数不超过500例，到新年第一周，这个数字变成9548例，是前者的19倍。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
+translation,Translation,9,2 月份，Convercent 从 Sapphire Ventures 和 Tola Capital 等公司筹集了 1000 万美元的资金，其总资本上升至 4700 万美元。,"Translate the following Chinese passage into English. Output ONLY the English translation, nothing else (no preamble, no commentary, no source text echoed back).
+
+CHINESE PASSAGE:
+""""""
+2 月份，Convercent 从 Sapphire Ventures 和 Tola Capital 等公司筹集了 1000 万美元的资金，其总资本上升至 4700 万美元。
+""""""",translation_quality,"Which English translation is better, judged on faithfulness to the Chinese source's meaning and tone, fluency of the English, register matching, and natural idiomaticity?"
