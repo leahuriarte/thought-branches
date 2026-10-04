@@ -12,6 +12,15 @@ class TinyTokenizer:
         return [101, 102, 103]
 
 
+class MappingTokenizer(TinyTokenizer):
+    def apply_chat_template(self, messages, *, tokenize, add_generation_prompt, enable_thinking):
+        super().apply_chat_template(
+            messages, tokenize=tokenize, add_generation_prompt=add_generation_prompt,
+            enable_thinking=enable_thinking,
+        )
+        return {"input_ids": [201, 202, 203], "attention_mask": [1, 1, 1]}
+
+
 class FakeClient:
     base_url = "http://127.0.0.1:30000"
 
@@ -31,6 +40,10 @@ def test_prompt_uses_template_ids_then_exact_mid_sentence_prefix_ids():
     # A prefix may end mid-sentence; preserve these IDs as captured, with no re-encoding.
     prefix_ids = [8123, 19, 77]
     assert exact_continuation_prompt(conversation_ids, prefix_ids) == [101, 102, 103, 8123, 19, 77]
+
+
+def test_chat_template_accepts_transformers_mapping_result():
+    assert chat_template_token_ids(MappingTokenizer(), [{"role": "user", "content": "Question"}]) == [201, 202, 203]
 
 
 def test_runner_submits_full_ids_and_records_generated_suffix_ids():

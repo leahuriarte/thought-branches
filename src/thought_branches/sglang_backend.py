@@ -76,6 +76,12 @@ def chat_template_token_ids(tokenizer: Any, messages: list[dict[str, str]]) -> l
         add_generation_prompt=True,
         enable_thinking=True,
     )
+    # Newer Transformers versions can return a BatchEncoding/mapping even when
+    # tokenize=True. Extract the field before handling tensors or batched IDs.
+    if isinstance(ids, dict) or hasattr(ids, "keys"):
+        if "input_ids" not in ids:
+            raise ValueError("tokenizer chat template result has no input_ids field")
+        ids = ids["input_ids"]
     if hasattr(ids, "tolist"):
         ids = ids.tolist()
     if ids and isinstance(ids[0], list):
