@@ -20,6 +20,10 @@ tb-build-viewer = "thought_branches.scripts.build_viewer:main"
 tb-label-reasoning-llm = "thought_branches.scripts.label_reasoning_chunks_llm:main"
 tb-run-judging = "thought_branches.scripts.run_judging:main"
 tb-validate-deepseek-prefix = "thought_branches.scripts.validate_deepseek_prefix:main"
+tb-run-sglang-generation = "thought_branches.scripts.run_sglang_generation:main"
+tb-validate-sglang-prefix = "thought_branches.scripts.validate_sglang_prefix:main"
+tb-prepare-sglang-branch-jobs = "thought_branches.scripts.prepare_sglang_branch_jobs:main"
+tb-run-sglang-branches = "thought_branches.scripts.run_sglang_branches:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
