@@ -39,6 +39,14 @@ def condition_title(condition: str) -> str:
     return condition.replace("_", " ").title()
 
 
+def branch_anchor(row: dict[str, Any]) -> str:
+    return f"sample-{row.get('sample_index', 0)}-{row.get('condition', '')}"
+
+
+def sample_title(row: dict[str, Any]) -> str:
+    return f"Pairing {int(row.get('sample_index', 0)) + 1}"
+
+
 def label_badges(labels: list[str]) -> str:
     return "".join(f'<span class="badge">{esc(label)}</span>' for label in labels)
 
@@ -65,6 +73,7 @@ def metadata_table(row: dict[str, Any]) -> str:
     utility_pair = row.get("job", {}).get("utility_pair", {}) if isinstance(row.get("job"), dict) else {}
     fields = [
         ("output_id", row.get("output_id", "")),
+        ("pairing", sample_title(row)),
         ("actor", row.get("actor", "")),
         ("model", row.get("model", "")),
         ("task", row.get("task", "")),
@@ -169,7 +178,8 @@ def render_judge_summary(votes: list[dict[str, Any]]) -> str:
         for condition, t in sorted(totals.items(), key=lambda kv: CONDITION_ORDER.get(kv[0], 99))
     )
     pair_rows = "\n".join(
-        f"<tr><td>{esc(condition_title(entry['condition_a']))} vs {esc(condition_title(entry['condition_b']))}</td>"
+        f"<tr><td>Pairing {int(entry.get('sample_index', 0)) + 1} · "
+        f"{esc(condition_title(entry['condition_a']))} vs {esc(condition_title(entry['condition_b']))}</td>"
         f"<td>{esc(entry['wins_a'])}</td><td>{esc(entry['wins_b'])}</td>"
         f"<td>{esc(entry['ties'])}</td><td>{esc(entry['unresolved'])}</td></tr>"
         for _, entry in sorted(summary["pairs"].items())
@@ -194,10 +204,10 @@ def render_judge_summary(votes: list[dict[str, Any]]) -> str:
 def render_branch(row: dict[str, Any], chunks: list[dict[str, Any]]) -> str:
     condition = str(row.get("condition", ""))
     return f"""
-    <section class="branch" id="{esc(condition)}">
+    <section class="branch" id="{esc(branch_anchor(row))}">
       <header class="branch-title">
         <div>
-          <p class="eyebrow">Condition</p>
+          <p class="eyebrow">{esc(sample_title(row))} · Condition</p>
           <h2>{esc(condition_title(condition))}</h2>
         </div>
         <div class="status">{esc(row.get('finish_reason', ''))}</div>
@@ -247,11 +257,16 @@ def render_html(
 ) -> str:
     generations = sorted(
         generations,
-        key=lambda row: (CONDITION_ORDER.get(str(row.get("condition", "")), 99), str(row.get("condition", ""))),
+        key=lambda row: (
+            int(row.get("sample_index", 0)),
+            CONDITION_ORDER.get(str(row.get("condition", "")), 99),
+            str(row.get("condition", "")),
+        ),
     )
     total_chunks = sum(len(chunks_by_output.get(str(row.get("output_id", "")), [])) for row in generations)
     nav = "\n".join(
-        f'<a href="#{esc(row.get("condition", ""))}">{esc(condition_title(str(row.get("condition", ""))))}</a>'
+        f'<a href="#{esc(branch_anchor(row))}">{esc(sample_title(row))} · '
+        f'{esc(condition_title(str(row.get("condition", ""))))}</a>'
         for row in generations
     )
     branches = "\n".join(

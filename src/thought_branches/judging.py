@@ -25,15 +25,20 @@ from thought_branches.prompts import build_judge_prompt
 
 JUDGE_REASONING = {"effort": "minimal", "exclude": True}
 
-GroupKey = tuple[str, str, str]  # (actor, task, item_id)
+GroupKey = tuple[str, str, str, int]  # (actor, task, item_id, sample_index)
 
 
 def group_key(row: dict[str, Any]) -> GroupKey:
-    return (str(row.get("actor", "")), str(row.get("task", "")), str(row.get("item_id", "")))
+    return (
+        str(row.get("actor", "")),
+        str(row.get("task", "")),
+        str(row.get("item_id", "")),
+        int(row.get("sample_index", 0)),
+    )
 
 
 def base_condition_groups(generations: list[dict[str, Any]]) -> dict[GroupKey, dict[str, dict[str, Any]]]:
-    """Group generation rows by (actor, task, item), keyed by condition within each group."""
+    """Group rows by (actor, task, item, sample), keyed by condition within each group."""
     groups: dict[GroupKey, dict[str, dict[str, Any]]] = defaultdict(dict)
     for row in generations:
         condition = str(row.get("condition", ""))
@@ -44,8 +49,8 @@ def base_condition_groups(generations: list[dict[str, Any]]) -> dict[GroupKey, d
 
 
 def pair_id(key: GroupKey, condition_a: str, condition_b: str) -> str:
-    actor, task, item = key
-    return f"{actor}:{task}:{item}:{condition_a}__vs__{condition_b}"
+    actor, task, item, sample_index = key
+    return f"{actor}:{task}:{item}:s{sample_index}:{condition_a}__vs__{condition_b}"
 
 
 def parse_winner(text: str) -> str:
@@ -64,7 +69,7 @@ def judge_prompt_for(row_x: dict[str, Any], row_y: dict[str, Any]) -> str:
     return build_judge_prompt(
         task=str(row_x.get("task", "")),
         item_label=str(row_x.get("item_label", "")),
-        base_prompt=str(job.get("prompt", "")),
+        base_prompt=str(job.get("base_prompt", "")),
         response_x=str(row_x.get("output_text", "")),
         response_y=str(row_y.get("output_text", "")),
     )
@@ -154,6 +159,7 @@ def run_judge_request(
         "actor": key[0],
         "task": key[1],
         "item_id": key[2],
+        "sample_index": key[3],
         "condition_a": condition_a,
         "condition_b": condition_b,
         "judge_model": judge_model,
@@ -183,6 +189,7 @@ def summarize_votes(votes: list[dict[str, Any]]) -> dict[str, Any]:
                 "actor": vote.get("actor", ""),
                 "task": vote.get("task", ""),
                 "item_id": vote.get("item_id", ""),
+                "sample_index": int(vote.get("sample_index", 0)),
                 "condition_a": condition_a,
                 "condition_b": condition_b,
                 "wins_a": 0,
@@ -234,7 +241,8 @@ def render_judge_summary_markdown(summary: dict[str, Any]) -> str:
     for pid, entry in sorted(summary["pairs"].items()):
         lines.append(
             f"### {entry['condition_a']} vs {entry['condition_b']} "
-            f"({entry['actor']}, {entry['task']}, {entry['item_id']})"
+            f"({entry['actor']}, {entry['task']}, {entry['item_id']}, "
+            f"pairing {entry['sample_index'] + 1})"
         )
         lines.append("")
         lines.append(

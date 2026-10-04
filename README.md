@@ -48,6 +48,25 @@ For models that expose readable reasoning traces through OpenRouter, request the
 tb-run-generation --temperature 0.7 --max-tokens 1200 --reasoning-effort low
 ```
 
+Before treating a hosted endpoint as a native reasoning-continuation backend, prepare a small
+prefix-fidelity check (three prefix locations, including a mid-sentence cut, with three identical
+requests per prefix):
+
+```bash
+tb-validate-deepseek-prefix
+```
+
+This command is offline by default and writes the exact request payloads for inspection. After
+setting `DEEPSEEK_API_KEY`, add `--live` to make the nine small paid requests. The validator uses
+DeepSeek's documented beta `assistant.prefix` and `reasoning_content` fields, requires manual review
+of every prefix/suffix seam, and never marks the current direct-API models as eligible for the V3.2
+utility experiment. DeepSeek's current direct models and `deepseek/deepseek-v3.2` are different
+experimental subjects.
+
+Protocol details: [DeepSeek Chat Prefix Completion](https://api-docs.deepseek.com/guides/chat_prefix_completion),
+[Thinking Mode](https://api-docs.deepseek.com/guides/thinking_mode/), and
+[current Models & Pricing](https://api-docs.deepseek.com/quick_start/pricing/).
+
 Generation rows store both:
 
 - `raw_response`: the full provider response, including any `reasoning` / `reasoning_details`.
@@ -66,18 +85,45 @@ Chunk readable reasoning traces:
 tb-chunk-outputs --source reasoning --out outputs/chunks/reasoning_chunks.jsonl
 ```
 
-Label chunks with the built-in heuristic labels:
+The built-in heuristic labels remain available for exploratory summaries, but they are not accepted
+for branch selection:
 
 ```bash
 tb-label-chunks
 ```
 
-If your provider returns readable reasoning traces in `raw_response`, you can prepare motivated/unmotivated branch continuation jobs:
+Classify reasoning chunks with the LLM labeler, then prepare native motivated/unmotivated prefixes.
+Branch preparation rejects heuristic labels and older LLM label schemas:
 
 ```bash
-tb-prepare-branch-continuations --max-seeds 20
-tb-run-generation --jobs outputs/api/branch_continuation_jobs.jsonl
+tb-label-reasoning-llm \
+  --generations outputs/api/generations.jsonl \
+  --chunks outputs/chunks/reasoning_chunks.jsonl \
+  --out outputs/chunks/reasoning_chunks_llm_labeled.jsonl
+
+tb-prepare-branch-continuations \
+  --generations outputs/api/generations.jsonl \
+  --labeled-chunks outputs/chunks/reasoning_chunks_llm_labeled.jsonl \
+  --model deepseek-flash \
+  --max-seeds 1 \
+  --samples-per-branch 2
+
+tb-run-branch-continuations
+tb-run-branch-continuations --live
 ```
+
+The LLM schema gives each chunk one `primary_function` and zero or more `feature_flags`. In
+particular, `motivation_cue_repetition` marks a restatement such as "the user asked for my best
+effort," while `motivation_commitment` marks a resulting resolve such as "so I should write a better
+answer." Both can appear on the same chunk, along with a more specific motivation flag. Native branch
+selection requires `motivation_commitment`, so cue repetition alone is not treated as motivation.
+
+The runner is validation-only unless `--live` is supplied. It sends the original prompt followed by
+an assistant message containing the selected `reasoning_content` prefix and `prefix: true`; it does
+not quote the prefix in a new user prompt. Repeated samples for each source/branch are rejected unless
+their API payloads are identical. Generated `reasoning_text` contains only the new suffix so it can be
+chunked and LLM-classified afterward. `source_model` and target `model` are recorded separately because
+continuing a V3.2 trace with Flash changes the experimental subject.
 
 ## Inputs And Outputs
 

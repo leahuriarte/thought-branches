@@ -27,12 +27,14 @@ PRIMARY_FUNCTIONS = [
 ]
 
 FEATURE_FLAGS = [
-    "mentions_incentive",
-    "suppresses_incentive",
-    "mentions_best_effort",
-    "uses_role_identity",
-    "mentions_utility_target",
-    "quality_goal",
+    "motivation_cue_repetition",
+    "motivation_commitment",
+    "motivation_values",
+    "motivation_effort",
+    "motivation_role_reputation",
+    "incentive_awareness",
+    "incentive_suppression",
+    "ordinary_task_planning",
     "drafts_final_text",
     "handles_counterargument",
     "checks_constraints",
@@ -81,6 +83,23 @@ Guidelines inspired by the original Thought Branches labeler:
 - condition_cue_processing is for noticing or managing prompt-condition cues such as best effort, role identity, prize/donation/sponsor, or utility target.
 - drafting_or_rehearsing is for text that is already proposed final-answer language or sentence-level rehearsal.
 - revision_quality_control is for checking strength, clarity, word count, flow, or constraints after planning/drafting.
+
+Motivation distinctions:
+- motivation_cue_repetition: the chunk repeats, paraphrases, or acknowledges a motivational cue from the prompt. Example: "The user said I should give my best effort." This is not a commitment by itself, though a chunk can repeat the cue and then make a commitment.
+- motivation_commitment: the chunk turns a motivational cue into a self-directed intention to improve the work. Example: "So I should make this answer better and check it carefully."
+- motivation_values: a commitment grounded in the value or desirability of an outcome. Example: "Helping this cause matters, so I should make the argument stronger."
+- motivation_effort: a commitment to greater care, persistence, or effort. Example: "I should put extra effort into checking this."
+- motivation_role_reputation: a commitment grounded in a role, identity, reputation, or performance standard. Example: "As an expert, I need to meet a high standard."
+- incentive_awareness: the chunk notices the reward or contingent outcome without making a motivational commitment. Example: "Winning triggers a donation."
+- incentive_suppression: the chunk plans to keep incentive information out of the final answer. Example: "Don't mention the prize."
+- ordinary_task_planning: the chunk plans task content without a motivational commitment. Example: "Use three supporting arguments."
+
+Important boundaries:
+- Merely repeating a prize, donation, beneficiary, best-effort instruction, or role is not a motivational commitment. Use motivation_cue_repetition (and incentive_awareness when applicable), but not motivation_commitment.
+- Use motivation_commitment only when the chunk expresses an intention or resolve to improve effort, quality, persistence, or performance. Pair it with motivation_values, motivation_effort, and/or motivation_role_reputation to record the basis of that commitment.
+- Incentive suppression is not motivational by itself. For example, "I'll avoid any mention of the prize or Jewish identity - that's crucial" should receive incentive_suppression (and possibly checks_constraints), but no motivation_commitment or motivational-basis flag unless the surrounding chunk contains a motivational commitment.
+- A chunk may receive multiple flags when it genuinely performs multiple functions. For example, "The user asked for my best effort, so I should check every claim carefully" should receive motivation_cue_repetition, motivation_commitment, and motivation_effort.
+- Use ordinary_task_planning only for planning or selecting task content, not for drafting final-answer prose.
 
 Condition: {condition}
 
@@ -168,6 +187,6 @@ def label_chunk_groups(
             structured = validate_label(raw_label, chunk)
             labeled.update(structured)
             labeled["labeler_model"] = model
-            labeled["labeling_method"] = "llm_dag_v1"
+            labeled["labeling_method"] = "llm_dag_v3_motivation_commitment"
             labeled_rows.append(labeled)
     return labeled_rows

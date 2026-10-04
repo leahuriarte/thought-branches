@@ -54,6 +54,10 @@ def run_jobs(
     max_tokens: int,
     reasoning: dict[str, Any] | None,
 ) -> tuple[int, int]:
+    if any(job.get("continuation_mode") == "native_reasoning_prefix" for job in jobs):
+        raise ValueError(
+            "native reasoning-prefix jobs must be run with tb-run-branch-continuations, not tb-run-generation"
+        )
     done = existing_output_ids(generations_path)
     client = None if dry_run else OpenRouterClient()
     written = 0

@@ -15,9 +15,11 @@ tb-run-generation = "thought_branches.scripts.run_generation:main"
 tb-chunk-outputs = "thought_branches.scripts.chunk_outputs:main"
 tb-label-chunks = "thought_branches.scripts.label_chunks:main"
 tb-prepare-branch-continuations = "thought_branches.scripts.prepare_branch_continuation_jobs:main"
+tb-run-branch-continuations = "thought_branches.scripts.run_branch_continuations:main"
 tb-build-viewer = "thought_branches.scripts.build_viewer:main"
 tb-label-reasoning-llm = "thought_branches.scripts.label_reasoning_chunks_llm:main"
 tb-run-judging = "thought_branches.scripts.run_judging:main"
+tb-validate-deepseek-prefix = "thought_branches.scripts.validate_deepseek_prefix:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
